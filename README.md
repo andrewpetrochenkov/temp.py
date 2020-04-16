@@ -5,7 +5,8 @@ https://pypi.org/project/python-readme-generator/
 
 [![](https://img.shields.io/pypi/pyversions/temp.svg?longCache=True)](https://pypi.org/project/temp/)
 [![](https://img.shields.io/pypi/v/temp.svg?maxAge=3600)](https://pypi.org/project/temp/)
-[![Travis](https://api.travis-ci.org/looking-for-a-job/temp.py.svg?branch=master)](https://travis-ci.org/looking-for-a-job/temp.py/)
+[![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+[![Travis](https://api.travis-ci.org/andrewp-as-is/temp.py.svg?branch=master)](https://travis-ci.org/andrewp-as-is/temp.py/)
 
 #### Installation
 ```bash

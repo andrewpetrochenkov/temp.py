@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import os
 from tempfile import mkstemp, mkdtemp
 import public
 
