@@ -1,21 +1,17 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+__all__ = ["tempdir", "tempfile"]
+
+
 import os
-from tempfile import mkstemp, mkdtemp
-import public
-
-__all__ = ["TMPDIR"]
+import tempfile
 
 
-@public.add
-def tempfile():
-    """create temp file and return path"""
-    f, path = mkstemp()
-    os.close(f)
-    return path
-
-
-@public.add
 def tempdir():
     """create temp dir and return path"""
-    return mkdtemp()
+    return tempfile.mkdtemp()
+
+
+def tempfile():
+    """create temp file and return path"""
+    f, path = tempfile.mkstemp()
+    os.close(f)
+    return path

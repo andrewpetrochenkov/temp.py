@@ -1,13 +1,7 @@
-from setuptools import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='temp',
-    version='2020.4.16',
-    install_requires=[
-        'public',
-        'setuptools',
-    ],
-    packages=[
-        'temp',
-    ],
+    install_requires=open('requirements.txt').read().splitlines(),
+    packages=setuptools.find_packages()
 )
