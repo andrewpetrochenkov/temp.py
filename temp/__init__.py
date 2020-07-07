@@ -2,16 +2,16 @@ __all__ = ["tempdir", "tempfile"]
 
 
 import os
-import tempfile
+from tempfile import mkdtemp, mkstemp
 
 
 def tempdir():
     """create temp dir and return path"""
-    return tempfile.mkdtemp()
+    return mkdtemp()
 
 
 def tempfile():
     """create temp file and return path"""
-    f, path = tempfile.mkstemp()
+    f, path = mkstemp()
     os.close(f)
     return path
